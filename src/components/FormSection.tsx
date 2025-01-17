@@ -23,8 +23,6 @@ const FormSection: React.FC<FormSectionProps> = ({ selectedDate, onAddEntry }) =
         }, [count, price]);
     
     const handleAddClick = () => {
-        console.log("Adding entry:", FormSection);
-
         if (!name) {
             setError("名前を入力してください。");
             return;

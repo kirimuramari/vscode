@@ -41,7 +41,7 @@ const handleSaveAll = async () => {
         alert("エラーが発生しました。");       
     }
 };
-const cellStyle = "border px-4 py-2";
+const cellStyle = "border border-gray-300 px-4 py-2";
     return (
         <div className="bg-white p-4 rounded-lg shadow-md">
             <h2 className="text-xl font-bold mb-4">エントリー</h2>
@@ -50,7 +50,7 @@ const cellStyle = "border px-4 py-2";
                 <p className="text-gray-500">エントリがありません。</p>
             ) : (
                 <>
-                <table className="w-full border-collapse">
+                <table className="min-w-full table-auto border-collapse border border-gray-200">
                     <thead>
                         <tr>
                             <th className={cellStyle}>名前</th>

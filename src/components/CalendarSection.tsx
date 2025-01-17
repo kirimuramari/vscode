@@ -20,7 +20,6 @@ const isRegisteredDate = (date: Date) => {
     }
     const formattedDate = date.toISOString().split("T")[0];
     return registeredDates.includes(formattedDate); 
-	console.log(formattedDate,registeredDates);
 };
 
 // 日付変更ハンドラー
